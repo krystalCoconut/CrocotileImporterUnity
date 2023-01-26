@@ -42,7 +42,7 @@ public class CrocyImporter : ScriptedImporter
                 {
                     GameObject originalPrefab = new GameObject(_object.name);
                     CrocoBehaviour cBehaviour = originalPrefab.AddComponent<CrocoBehaviour>();
-                    cBehaviour.customData = _object.custom;
+                    //cBehaviour.customData = _object.custom;
                     MeshFilter mesh = originalPrefab.AddComponent<MeshFilter>();
                     MeshRenderer mr = originalPrefab.AddComponent<MeshRenderer>();
                     mesh.sharedMesh = AssetDatabase.LoadAssetAtPath<Mesh>("Assets/Objects/" + _object.name + ".obj");
